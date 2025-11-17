@@ -1,0 +1,70 @@
+[
+  {
+    "id": "preservation-efforts",
+    "title": "Preservation Efforts: Why Save Games?",
+    "description": "Explore the critical importance of video game preservation and the challenges facing digital heritage conservation.",
+    "sections": [
+      {
+        "heading": "The Urgency of Game Preservation",
+        "content": "Video games represent a unique form of interactive cultural heritage, yet they're among the most fragile artifacts of our digital age. Unlike books or films, games require specific hardware, software, and even online services to function. When these dependencies disappear, games become unplayable - effectively lost to history. Industry estimates suggest that 87% of classic games released before 2010 are currently out of print and unavailable for legal purchase."
+      },
+      {
+        "heading": "Technical Challenges",
+        "content": "Preserving video games faces unique technical obstacles. Physical media degrades over time - cartridge batteries die, disc rot destroys CD-ROMs, and magnetic storage fails. Digital distribution offers no complete solution; online stores close, DRM servers shut down, and digital licenses expire. Proprietary hardware becomes scarce and expensive. The technology itself becomes obsolete, requiring emulation and reverse engineering to recreate the original experience."
+      },
+      {
+        "heading": "Legal and Ethical Issues",
+        "content": "Copyright law creates significant barriers to preservation efforts. Abandonware exists in legal gray areas, emulation often requires circumventing copy protection, and institutional archives struggle with unclear fair use protections. Organizations like the Video Game History Foundation and The Strong Museum of Play advocate for DMCA exemptions and copyright reform to enable legitimate preservation work."
+      },
+      {
+        "heading": "Community-Driven Solutions",
+        "content": "Passionate communities lead preservation through ROM archival projects, emulator development, hardware reverse engineering, and documentation efforts. Projects like MAME (Multiple Arcade Machine Emulator), Internet Archive's digital libraries, and fan-run preservation initiatives save games that commercial entities have abandoned. These grassroots efforts often provide the only access to gaming history."
+      },
+      {
+        "heading": "The Cultural Stakes",
+        "content": "Video games are more than entertainment - they're artistic expressions, technological achievements, and social artifacts. They reflect the values, anxieties, and aspirations of their eras. Losing games means losing perspectives on how we lived, what we valued, and how technology shaped society. Future researchers, educators, and artists need access to gaming history to understand our digital culture."
+      }
+    ],
+    "resources": [
+      "Video Game History Foundation",
+      "The Strong National Museum of Play",
+      "Internet Archive Software Library",
+      "Classic Gaming Preservation Society"
+    ],
+    "visualizations": ["preservation-timeline", "media-degradation-chart"]
+  },
+  {
+    "id": "graphics-evolution",
+    "title": "Evolution of Graphics: From Pixels to Polygons",
+    "description": "Journey through the technological and artistic evolution of video game graphics, from simple sprites to photorealistic rendering.",
+    "sections": [
+      {
+        "heading": "The Sprite Era (1970s-1980s)",
+        "content": "Early video games relied on sprites - small 2D bitmap images that could be moved around the screen. Limited by severe hardware constraints, games like Pong used simple geometric shapes, while later titles like Pac-Man and Donkey Kong created characters from tiny collections of pixels. Artists worked within extreme limitations: the Atari 2600 could display only 128 colors with a maximum of 16 on screen simultaneously. These constraints fostered creativity, leading to iconic designs instantly recognizable despite their simplicity."
+      },
+      {
+        "heading": "The 16-bit Renaissance (1989-1995)",
+        "content": "The leap to 16-bit consoles like the Genesis and SNES transformed gaming visuals. With more colors, larger sprites, and special effects like transparency and scaling, games achieved new artistic heights. Mode 7 on the SNES created pseudo-3D effects by rotating and scaling background layers, powering titles like F-Zero and Super Mario Kart. Parallax scrolling added depth to 2D worlds. This era represents the peak of 2D sprite artistry, with games like Street Fighter II and Chrono Trigger showcasing hand-crafted pixel art that remains beloved today."
+      },
+      {
+        "heading": "The 3D Revolution (1995-2000)",
+        "content": "The transition to 3D graphics fundamentally changed game development. The PlayStation, Nintendo 64, and Saturn used polygons - geometric shapes that could be manipulated in three-dimensional space. Early 3D games were crude, with low polygon counts, texture warping, and no filtering. Super Mario 64 and Tomb Raider established 3D movement and camera controls. By generation's end, titles like Final Fantasy VIII and The Legend of Zelda: Ocarina of Time demonstrated mature 3D design, though the technology's limitations remained evident."
+      },
+      {
+        "heading": "High-Definition Era (2005-2013)",
+        "content": "The jump to HD with Xbox 360 and PlayStation 3 brought resolution from 480p to 1080p. Normal mapping, dynamic lighting, and shader effects added surface detail without increasing polygon counts. Motion capture created realistic character animation. Games pursued photorealism, though the 'uncanny valley' created unsettling almost-real characters. This generation also saw diverse art styles emerge - Team Fortress 2's stylized characters and Journey's minimalist beauty proved technology could serve artistic vision beyond realism."
+      },
+      {
+        "heading": "Modern Graphics and Beyond (2013-Present)",
+        "content": "Contemporary games leverage physically-based rendering (PBR) for realistic materials, ray tracing for accurate light simulation, and 4K/8K resolutions. The gap between pre-rendered cinematics and real-time gameplay has nearly closed. Yet technology serves varied artistic goals: photorealistic epics like The Last of Us Part II coexist with stylized masterpieces like Hades and minimalist indie gems. Virtual reality adds new dimensions to consider. As machine learning and real-time rendering advance, graphics evolution continues exploring both technical achievement and artistic expression."
+      }
+    ],
+    "resources": [
+      "GDC Graphics Talks Archive",
+      "Digital Foundry Technical Analysis",
+      "The Art of Video Games Exhibition",
+      "Game Developers Conference Proceedings"
+    ],
+    "visualizations": ["graphics-comparison-slider", "polygon-count-chart", "color-palette-evolution"]
+  }
+]
