@@ -1,0 +1,295 @@
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  /* Typography Adjustments */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  /* Container */
+  .container,
+  .container-wide {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Spacing */
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  /* Grid Adjustments */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline - Single Column */
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 0;
+    padding: var(--spacing-md);
+  }
+
+  .timeline-marker {
+    left: 30px;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+  }
+
+  .gallery-image,
+  .gallery-placeholder {
+    height: 200px;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+  }
+
+  .nav-menu.active {
+    max-height: 500px;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--medium-gray);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Lightbox */
+  .lightbox-content {
+    max-width: 95%;
+  }
+
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .lightbox-prev {
+    left: 0.5rem;
+  }
+
+  .lightbox-next {
+    right: 0.5rem;
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Spacing */
+  :root {
+    --spacing-xl: 2rem;
+    --spacing-xxl: 2.5rem;
+  }
+
+  /* Timeline */
+  .timeline-filters {
+    gap: var(--spacing-xs);
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-content {
+    padding: var(--spacing-sm);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-image,
+  .gallery-placeholder {
+    height: 250px;
+  }
+
+  /* Cards */
+  .card {
+    padding: var(--spacing-md);
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  /* Legend */
+  .timeline-legend {
+    gap: var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Console Specs */
+  .specs-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Lightbox Caption */
+  .lightbox-caption {
+    padding: var(--spacing-sm);
+  }
+
+  .lightbox-caption h3 {
+    font-size: 1.25rem;
+  }
+
+  .lightbox-caption p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .container-wide {
+    max-width: 1600px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .timeline {
+    max-width: 1200px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav,
+  .timeline-filters,
+  .lightbox,
+  .back-to-top,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .card,
+  .timeline-content {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .timeline::before {
+    animation: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-blue: #0051C3;
+    --primary-purple: #7B2C9C;
+    --text-primary: #000000;
+    --text-secondary: #1a1a1a;
+  }
+
+  .card,
+  .timeline-content {
+    border: 2px solid var(--text-primary);
+  }
+}

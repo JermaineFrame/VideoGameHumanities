@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational lessons about video game preservation, graphics evolution, and gaming's cultural impact.">
+    <title>Learn | Video Game Humanities</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .lesson-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .lesson-section {
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 2px solid var(--medium-gray);
+        }
+
+        .lesson-section:last-child {
+            border-bottom: none;
+        }
+
+        .lesson-section h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .visualization-container {
+            background: var(--light-gray);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+        }
+
+        .comparison-slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comparison-item {
+            color: var(--white);
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .comparison-item h4 {
+            color: var(--white);
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-list li {
+            padding: var(--spacing-sm) 0;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .resource-list li:last-child {
+            border-bottom: none;
+        }
+
+        .resource-list a {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .resource-list a:hover {
+            padding-left: var(--spacing-sm);
+        }
+
+        .resource-list a::before {
+            content: '🔗';
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="nav-logo">
+                    <h2>🎮 Video Game Humanities</h2>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Eras</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="eras/gen1-2.html">1st & 2nd Gen (1972-1983)</a></li>
+                            <li><a href="eras/gen3.html">3rd Gen (1983-1992)</a></li>
+                            <li><a href="eras/gen4.html">4th Gen (1987-1996)</a></li>
+                            <li><a href="eras/gen5.html">5th Gen (1993-2002)</a></li>
+                            <li><a href="eras/gen6.html">6th Gen (2000-2006)</a></li>
+                            <li><a href="eras/gen7.html">7th Gen (2005-2013)</a></li>
+                            <li><a href="eras/gen8.html">8th Gen (2012-2020)</a></li>
+                            <li><a href="eras/gen9.html">9th Gen (2020-Present)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learn.html" class="nav-link active">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Educational Resources</h1>
+                <p class="hero-subtitle lead">Deep dives into preservation, technology, and gaming's cultural impact</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Lessons Overview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Featured Lessons</h2>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>📚 Preservation Efforts</h3>
+                    <p class="mb-md">
+                        Explore the critical importance of video game preservation and the challenges facing digital heritage conservation.
+                    </p>
+                    <a href="#preservation" class="btn btn-primary">Start Learning</a>
+                </div>
+
+                <div class="card">
+                    <h3>🎨 Evolution of Graphics</h3>
+                    <p class="mb-md">
+                        Journey through the technological and artistic evolution of video game graphics, from simple sprites to photorealistic rendering.
+                    </p>
+                    <a href="#graphics" class="btn btn-primary">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson 1: Preservation -->
+    <section class="section section-alt" id="preservation">
+        <div class="container">
+            <div class="lesson-card">
+                <div class="text-center mb-xl">
+                    <span class="badge badge-primary mb-sm">Lesson 1</span>
+                    <h1>Preservation Efforts: Why Save Games?</h1>
+                    <p class="lead">Understanding the critical importance of video game preservation and digital heritage conservation</p>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>The Urgency of Game Preservation</h3>
+                    <p>
+                        Video games represent a unique form of interactive cultural heritage, yet they're among the most fragile artifacts of our digital age. Unlike books or films, games require specific hardware, software, and even online services to function. When these dependencies disappear, games become unplayable—effectively lost to history.
+                    </p>
+                    <p>
+                        Industry estimates suggest that <strong>87% of classic games released before 2010 are currently out of print and unavailable for legal purchase</strong>. This represents an enormous cultural loss, equivalent to the majority of pre-1980 films being permanently unavailable. The games we're losing aren't just entertainment; they're historical documents of technological achievement, artistic expression, and cultural values.
+                    </p>
+                    <div class="card mt-md" style="background: var(--light-gray);">
+                        <h4>💡 Key Insight</h4>
+                        <p style="margin: 0;">
+                            "If we don't preserve video games, we lose not just entertainment, but windows into how past generations thought, played, and solved problems." - Video Game History Foundation
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>Technical Challenges</h3>
+                    <p>
+                        Preserving video games faces unique technical obstacles that don't apply to other media:
+                    </p>
+                    <ul style="list-style: disc; margin-left: var(--spacing-lg); color: var(--text-secondary);">
+                        <li><strong>Physical Media Degradation:</strong> Cartridge batteries die (losing save data), disc rot destroys CD-ROMs and DVDs, and magnetic storage degrades over time.</li>
+                        <li><strong>Digital Distribution Risks:</strong> Online stores close (WiiWare, DSiWare), DRM servers shut down, and digital licenses expire with no recourse.</li>
+                        <li><strong>Hardware Scarcity:</strong> Original consoles fail, replacement parts become unavailable, and prices skyrocket for working units.</li>
+                        <li><strong>Software Dependencies:</strong> Operating system updates break compatibility, proprietary APIs disappear, and online multiplayer servers shut down permanently.</li>
+                        <li><strong>Technical Complexity:</strong> Emulation requires reverse engineering, FPGA recreation demands hardware expertise, and some copy protection remains uncracked.</li>
+                    </ul>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>Legal and Ethical Issues</h3>
+                    <p>
+                        Copyright law creates significant barriers to preservation efforts, often preventing legitimate archival work:
+                    </p>
+                    <p>
+                        <strong>The DMCA Problem:</strong> The Digital Millennium Copyright Act makes it illegal to circumvent copy protection, even for preservation. This means legally acquiring a game doesn't grant the right to preserve it if copy protection must be bypassed. Archivists risk legal action for doing preservation work.
+                    </p>
+                    <p>
+                        <strong>Abandonware Gray Areas:</strong> When companies abandon games without making them available, these titles exist in legal limbo. They're still copyrighted but commercially unavailable, creating ethical dilemmas for preservationists who could save them but risk legal consequences.
+                    </p>
+                    <p>
+                        Organizations like the <strong>Video Game History Foundation</strong> and <strong>The Strong Museum of Play</strong> advocate for DMCA exemptions specifically for video game preservation, similar to exemptions granted for film preservation.
+                    </p>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>Community-Driven Solutions</h3>
+                    <p>
+                        Passionate communities lead preservation through grassroots efforts:
+                    </p>
+                    <div class="grid grid-2 mt-md">
+                        <div class="card">
+                            <h4>🕹️ Emulation Projects</h4>
+                            <p>
+                                MAME (Multiple Arcade Machine Emulator) preserves arcade history by documenting and emulating arcade hardware. Projects like Dolphin (GameCube/Wii), RPCS3 (PS3), and Yuzu (Switch) preserve console gaming through software emulation.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h4>📚 ROM Archiving</h4>
+                            <p>
+                                No-Intro and Redump projects catalog and preserve ROM dumps with cryptographic verification, ensuring authentic preservation. The Internet Archive's software library provides legal access to thousands of preserved titles.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h4>🔧 Hardware Preservation</h4>
+                            <p>
+                                FPGA (Field-Programmable Gate Array) projects like MiSTer recreate original hardware at the silicon level, providing cycle-accurate preservation without original chips.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h4>📖 Documentation</h4>
+                            <p>
+                                Communities document development history, catalog beta versions, preserve marketing materials, and conduct oral histories with developers before knowledge is lost forever.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-section" style="border: none;">
+                    <h3>The Cultural Stakes</h3>
+                    <p>
+                        Video games are more than entertainment—they're artistic expressions, technological achievements, and social artifacts that reflect the values, anxieties, and aspirations of their eras.
+                    </p>
+                    <p>
+                        Losing games means losing:
+                    </p>
+                    <ul style="list-style: disc; margin-left: var(--spacing-lg); color: var(--text-secondary);">
+                        <li>Artistic visions that inspired generations of creators</li>
+                        <li>Technical innovations that pushed hardware limits</li>
+                        <li>Cultural perspectives on how societies viewed technology and play</li>
+                        <li>Social histories of online communities and multiplayer experiences</li>
+                        <li>Educational tools for future researchers, historians, and game developers</li>
+                    </ul>
+                    <p class="mt-md">
+                        <strong>Future researchers, educators, and artists need access to gaming history to understand our digital culture.</strong> Just as we preserve films, books, and music, video games deserve recognition as cultural heritage worthy of protection and study.
+                    </p>
+                </div>
+
+                <div class="visualization-container">
+                    <h3 class="text-center mb-md">Preservation Resources</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://gamehistory.org" target="_blank">Video Game History Foundation</a></li>
+                        <li><a href="https://www.museumofplay.org" target="_blank">The Strong National Museum of Play</a></li>
+                        <li><a href="https://archive.org/details/softwarelibrary" target="_blank">Internet Archive Software Library</a></li>
+                        <li><a href="http://www.mamedev.org" target="_blank">MAME - Multiple Arcade Machine Emulator</a></li>
+                        <li><a href="https://no-intro.org" target="_blank">No-Intro ROM Preservation Project</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson 2: Graphics Evolution -->
+    <section class="section" id="graphics">
+        <div class="container">
+            <div class="lesson-card">
+                <div class="text-center mb-xl">
+                    <span class="badge badge-secondary mb-sm">Lesson 2</span>
+                    <h1>Evolution of Graphics: From Pixels to Polygons</h1>
+                    <p class="lead">Journey through the technological and artistic evolution of video game graphics</p>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>The Sprite Era (1970s-1980s)</h3>
+                    <p>
+                        Early video games relied on <strong>sprites</strong>—small 2D bitmap images that could be moved around the screen. Limited by severe hardware constraints, developers created iconic designs from minimal pixels.
+                    </p>
+                    <div class="visualization-container">
+                        <div class="comparison-slider">
+                            <div class="comparison-item">
+                                <h4>Pong (1972)</h4>
+                                <p>Simple geometric shapes: rectangles and a square</p>
+                                <div style="font-size: 4rem;">▯ ● ▯</div>
+                            </div>
+                        </div>
+                        <p class="text-center mt-md text-secondary">
+                            <small>Placeholder visualization - Interactive comparison coming soon</small>
+                        </p>
+                    </div>
+                    <p>
+                        The Atari 2600 could display only <strong>128 colors with a maximum of 16 on screen simultaneously</strong>. Character sprites were often just 8x8 or 16x16 pixels. Yet within these constraints, artists created Pac-Man, Donkey Kong, and Space Invaders—characters instantly recognizable despite their simplicity.
+                    </p>
+                    <div class="card mt-md" style="background: var(--light-gray);">
+                        <h4>🎨 Artistic Innovation</h4>
+                        <p style="margin: 0;">
+                            "Limitations breed creativity. Early game artists became masters of implication, using minimal pixels to suggest character, emotion, and movement through color choice and animation."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>The 16-bit Renaissance (1989-1995)</h3>
+                    <p>
+                        The leap to 16-bit consoles transformed gaming visuals. The SNES could display <strong>32,768 colors with 256 on screen</strong>, while the Genesis offered faster processors for smooth action.
+                    </p>
+                    <p>
+                        <strong>Key Innovations:</strong>
+                    </p>
+                    <ul style="list-style: disc; margin-left: var(--spacing-lg); color: var(--text-secondary);">
+                        <li><strong>Mode 7 (SNES):</strong> Rotating and scaling background layers created pseudo-3D effects in F-Zero and Super Mario Kart</li>
+                        <li><strong>Parallax Scrolling:</strong> Multiple background layers moving at different speeds added depth to 2D worlds</li>
+                        <li><strong>Transparency Effects:</strong> Layered sprites with alpha blending created atmospheric effects</li>
+                        <li><strong>Larger Sprites:</strong> Character sprites grew to 32x32, 64x64, or larger, allowing detailed animation</li>
+                    </ul>
+                    <p class="mt-md">
+                        This era represents the peak of 2D sprite artistry. Games like <em>Street Fighter II</em>, <em>Chrono Trigger</em>, and <em>Yoshi's Island</em> showcased hand-crafted pixel art that remains beloved today, with modern indie games deliberately emulating this aesthetic.
+                    </p>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>The 3D Revolution (1995-2000)</h3>
+                    <p>
+                        The transition to 3D graphics fundamentally changed game development. Instead of drawing sprites pixel by pixel, artists modeled objects from <strong>polygons</strong>—geometric shapes manipulated in three-dimensional space.
+                    </p>
+                    <p>
+                        <strong>Early Challenges:</strong>
+                    </p>
+                    <div class="grid grid-2 mt-md">
+                        <div class="card">
+                            <h4>Low Polygon Counts</h4>
+                            <p>PlayStation models averaged 200-500 polygons per character. Lara Croft in the original Tomb Raider had only 230 polygons, with triangular breasts becoming iconic due to hardware limits.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Texture Warping</h4>
+                            <p>PlayStation lacked sub-pixel precision and texture filtering, causing visible warping and jittering. The N64's texture filtering produced blurry but stable images.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Camera Problems</h4>
+                            <p>Developers struggled with 3D camera controls. Early games featured clunky, fixed cameras until solutions like <em>Super Mario 64</em>'s free camera and <em>Ocarina of Time</em>'s Z-targeting emerged.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Movement Design</h4>
+                            <p>Navigating 3D space required new controls. The analog stick's introduction solved this, but designers still struggled with cliff edges, slopes, and spatial orientation.</p>
+                        </div>
+                    </div>
+                    <p class="mt-md">
+                        Despite these limitations, pioneering titles established conventions still used today. <em>Super Mario 64</em> taught players 3D movement, <em>Tomb Raider</em> proved 3D adventure games could work, and <em>Final Fantasy VII</em> demonstrated cinematic presentation through pre-rendered backgrounds and FMV cutscenes.
+                    </p>
+                </div>
+
+                <div class="lesson-section">
+                    <h3>High-Definition Era (2005-2013)</h3>
+                    <p>
+                        The jump to HD with Xbox 360 and PlayStation 3 brought resolution from 480p to 1080p. Character models leaped from thousands of polygons to hundreds of thousands. New techniques added realism without proportionally increasing polygon counts.
+                    </p>
+                    <p>
+                        <strong>Technical Advances:</strong>
+                    </p>
+                    <ul style="list-style: disc; margin-left: var(--spacing-lg); color: var(--text-secondary);">
+                        <li><strong>Normal Mapping:</strong> Simulated surface detail without additional geometry</li>
+                        <li><strong>Dynamic Lighting:</strong> Real-time shadows and lighting replaced pre-baked light maps</li>
+                        <li><strong>Shader Effects:</strong> Programmable shaders enabled realistic materials, water, and atmospheric effects</li>
+                        <li><strong>Motion Capture:</strong> Real actor movements captured at high fidelity for lifelike animation</li>
+                        <li><strong>Particle Systems:</strong> Complex smoke, fire, and weather effects with thousands of particles</li>
+                    </ul>
+                    <p class="mt-md">
+                        Yet this generation also revealed the "uncanny valley"—almost-realistic human faces that felt unsettling. Games pursuing photorealism sometimes felt lifeless, while stylized approaches like <em>Team Fortress 2</em>, <em>Borderlands</em>, and <em>Journey</em> proved technology could serve artistic vision beyond realism.
+                    </p>
+                </div>
+
+                <div class="lesson-section" style="border: none;">
+                    <h3>Modern Graphics and Beyond (2013-Present)</h3>
+                    <p>
+                        Contemporary games leverage cutting-edge techniques:
+                    </p>
+                    <ul style="list-style: disc; margin-left: var(--spacing-lg); color: var(--text-secondary);">
+                        <li><strong>Physically-Based Rendering (PBR):</strong> Materials respond to light realistically based on real-world physics</li>
+                        <li><strong>Ray Tracing:</strong> Simulates light rays bouncing through scenes for accurate reflections, shadows, and global illumination</li>
+                        <li><strong>4K/8K Resolution:</strong> Ultra-high resolutions reveal unprecedented detail</li>
+                        <li><strong>Machine Learning:</strong> AI upscaling (DLSS, FSR) and animation smoothing enhance visuals while maintaining performance</li>
+                        <li><strong>Volumetric Effects:</strong> Realistic fog, clouds, and underwater environments with light scattering</li>
+                    </ul>
+                    <p class="mt-md">
+                        The gap between pre-rendered cinematics and real-time gameplay has nearly closed. Yet technology serves diverse goals: photorealistic epics like <em>The Last of Us Part II</em> coexist with stylized masterpieces like <em>Hades</em>, minimalist indie gems like <em>Unpacking</em>, and retro-styled hits like <em>Shovel Knight</em>.
+                    </p>
+                    <p>
+                        <strong>The Future:</strong> Virtual reality adds new dimensions, neural rendering may create real-time photorealism, and procedural generation could create infinite detailed worlds. Graphics evolution continues exploring both technical achievement and artistic expression.
+                    </p>
+                </div>
+
+                <div class="visualization-container">
+                    <h3 class="text-center mb-md">Further Reading</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.gdconf.com" target="_blank">GDC Graphics Talks Archive</a></li>
+                        <li><a href="https://www.eurogamer.net/digitalfoundry" target="_blank">Digital Foundry Technical Analysis</a></li>
+                        <li><a href="https://www.museumofplay.org/exhibits/the-art-of-video-games/" target="_blank">The Art of Video Games Exhibition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-alt text-center">
+        <div class="container">
+            <h2>Ready to Explore More?</h2>
+            <p class="lead mb-lg">Dive into the interactive timeline or explore gaming eras</p>
+            <div class="flex-center gap-md" style="flex-wrap: wrap;">
+                <a href="index.html#timeline" class="btn btn-primary">View Timeline</a>
+                <a href="about.html" class="btn btn-outline">About This Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Video Game Humanities</h4>
+                    <p>Preserving and celebrating the history of interactive entertainment.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://gamehistory.org" target="_blank">Video Game History Foundation</a></li>
+                        <li><a href="https://www.museumofplay.org" target="_blank">The Strong Museum</a></li>
+                        <li><a href="https://archive.org" target="_blank">Internet Archive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Video Game Humanities. An educational preservation project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>

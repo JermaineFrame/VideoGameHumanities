@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Nintendo Entertainment System (NES) - The console that saved gaming and established Nintendo as an industry leader.">
+    <title>Nintendo Entertainment System (NES) | Video Game Humanities</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .spec-item {
+            background: var(--light-gray);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--accent-pink);
+        }
+
+        .spec-label {
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .spec-value {
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+
+        .console-hero {
+            background: linear-gradient(135deg, var(--accent-pink) 0%, var(--primary-purple) 100%);
+            color: var(--white);
+            padding: var(--spacing-xxl) 0;
+            text-align: center;
+        }
+
+        .console-hero h1 {
+            color: var(--white);
+            background: none;
+            -webkit-text-fill-color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="nav-logo">
+                    <h2>🎮 Video Game Humanities</h2>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Eras</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../eras/gen1-2.html">1st & 2nd Gen (1972-1983)</a></li>
+                            <li><a href="../eras/gen3.html">3rd Gen (1983-1992)</a></li>
+                            <li><a href="../eras/gen4.html">4th Gen (1987-1996)</a></li>
+                            <li><a href="../eras/gen5.html">5th Gen (1993-2002)</a></li>
+                            <li><a href="../eras/gen6.html">6th Gen (2000-2006)</a></li>
+                            <li><a href="../eras/gen7.html">7th Gen (2005-2013)</a></li>
+                            <li><a href="../eras/gen8.html">8th Gen (2012-2020)</a></li>
+                            <li><a href="../eras/gen9.html">9th Gen (2020-Present)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../learn.html" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-md">
+        <nav aria-label="breadcrumb">
+            <p class="text-secondary">
+                <a href="../index.html">Home</a> →
+                <a href="../eras/gen3.html">3rd Generation</a> →
+                <strong>NES</strong>
+            </p>
+        </nav>
+    </div>
+
+    <!-- Console Hero -->
+    <section class="console-hero">
+        <div class="container">
+            <span class="badge mb-md" style="background: rgba(255,255,255,0.3); color: white;">Nintendo • 1985</span>
+            <h1>Nintendo Entertainment System</h1>
+            <p class="lead">The console that saved the video game industry</p>
+        </div>
+    </section>
+
+    <!-- Console Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Console Overview</h2>
+                <p>
+                    The Nintendo Entertainment System (NES), known as the Famicom (Family Computer) in Japan, single-handedly revitalized the video game industry after the North American video game crash of 1983. Released in North America in 1985, the NES introduced strict quality control, innovative games, and the iconic directional pad that became an industry standard.
+                </p>
+                <p>
+                    Nintendo's careful marketing positioned the NES as a toy rather than a video game console to avoid the stigma from the 1983 crash. The inclusion of R.O.B. (Robotic Operating Buddy) and the Zapper light gun helped the system gain retail distribution. Once in homes, groundbreaking titles like Super Mario Bros., The Legend of Zelda, and Metroid established Nintendo as the gold standard for quality gaming.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center mb-xl">Technical Specifications</h2>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-label">CPU</div>
+                    <div class="spec-value">Ricoh 2A03 (6502-based)<br>1.79 MHz</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">RAM</div>
+                    <div class="spec-value">2 KB main RAM<br>2 KB video RAM</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Graphics</div>
+                    <div class="spec-value">Picture Processing Unit (PPU)<br>256 × 240 resolution</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Colors</div>
+                    <div class="spec-value">52 color palette<br>25 on-screen simultaneously</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Audio</div>
+                    <div class="spec-value">5 channels<br>2 pulse, 1 triangle, 1 noise, 1 PCM</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Media</div>
+                    <div class="spec-value">ROM cartridge<br>Up to 1 MB typical</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Controllers</div>
+                    <div class="spec-value">2 controller ports<br>D-pad innovation</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Units Sold</div>
+                    <div class="spec-value">61.91 million worldwide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notable Games -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Legendary Games</h2>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Super Mario Bros. (1985)</h3>
+                    <span class="badge badge-secondary mb-sm">Platformer</span>
+                    <p>
+                        Shigeru Miyamoto's masterpiece established the side-scrolling platformer genre. Its tight controls, creative level design, and hidden secrets created a template still used today. The game sold 40+ million copies and came bundled with most NES systems.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>The Legend of Zelda (1986)</h3>
+                    <span class="badge badge-secondary mb-sm">Action-Adventure</span>
+                    <p>
+                        Nintendo's action-adventure epic introduced non-linear exploration, battery-backed saves, and a rich overworld filled with secrets. Zelda established the action-adventure template and proved games could deliver deep, long-form experiences.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Metroid (1986)</h3>
+                    <span class="badge badge-secondary mb-sm">Action-Adventure</span>
+                    <p>
+                        Metroid combined platforming with exploration and character progression. Its interconnected world, ability-gating, and atmospheric sci-fi setting created the "Metroidvania" genre. The reveal of protagonist Samus as female challenged gaming's gender assumptions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Mega Man 2 (1988)</h3>
+                    <span class="badge badge-secondary mb-sm">Action-Platformer</span>
+                    <p>
+                        Capcom's action-platformer perfected the choose-your-own-level structure and rock-paper-scissors weapon system. Its challenging gameplay, memorable music, and precise controls made it a beloved classic that spawned countless sequels.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Final Fantasy (1987)</h3>
+                    <span class="badge badge-secondary mb-sm">RPG</span>
+                    <p>
+                        Square's first RPG saved the company from bankruptcy and established Japanese RPG conventions: turn-based combat, job systems, epic narratives, and strategic party management. It began one of gaming's most influential franchises.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Castlevania III (1989)</h3>
+                    <span class="badge badge-secondary mb-sm">Action-Platformer</span>
+                    <p>
+                        Konami's gothic action-platformer featured branching paths, multiple playable characters, and a legendary soundtrack. The series' blend of horror themes, challenging gameplay, and exploration would later inspire the Metroidvania subgenre.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Gallery -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="text-center mb-xl">Hardware & Accessories</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🎮</div>
+                    <div class="gallery-caption">
+                        <h4>NES Console</h4>
+                        <p>The iconic gray front-loading design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🕹️</div>
+                    <div class="gallery-caption">
+                        <h4>NES Controller</h4>
+                        <p>D-pad, Select, Start, A, and B buttons</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🔫</div>
+                    <div class="gallery-caption">
+                        <h4>NES Zapper</h4>
+                        <p>Light gun for Duck Hunt and Hogan's Alley</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🤖</div>
+                    <div class="gallery-caption">
+                        <h4>R.O.B. the Robot</h4>
+                        <p>Marketing tool that helped NES enter toy stores</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📼</div>
+                    <div class="gallery-caption">
+                        <h4>Game Cartridges</h4>
+                        <p>Gray plastic casing became iconic</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">🎯</div>
+                    <div class="gallery-caption">
+                        <h4>Power Pad</h4>
+                        <p>Floor mat controller for Track & Field</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy & Impact -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-xl">Legacy & Impact</h2>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Industry Revival</h3>
+                    <p>
+                        The NES proved video games weren't a fad by delivering consistent quality and innovation. Nintendo's licensing program ensured third-party developers met quality standards, preventing the shovelware that caused the 1983 crash. The "Nintendo Seal of Quality" became a promise of value.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Franchise Foundations</h3>
+                    <p>
+                        The NES established Mario, Zelda, Metroid, Mega Man, Final Fantasy, Castlevania, and dozens more franchises that remain active today. These games defined genres and created character icons recognized globally across generations.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Controller Innovation</h3>
+                    <p>
+                        The NES controller's cross-shaped D-pad became the industry standard, replacing joysticks for precise directional input. This design persists on modern controllers, demonstrating Nintendo's engineering excellence and understanding of player needs.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Cultural Phenomenon</h3>
+                    <p>
+                        The NES penetrated popular culture through Nintendo Power magazine, the 1989 film "The Wizard," Saturday morning cartoons, and playground conversations. "Nintendo" became synonymous with video games itself, like "Kleenex" for tissues.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section section-alt text-center">
+        <div class="container">
+            <h2>Explore More Consoles</h2>
+            <p class="lead mb-lg">Discover other systems that shaped gaming history</p>
+            <div class="flex-center gap-md" style="flex-wrap: wrap;">
+                <a href="../eras/gen3.html" class="btn btn-primary">Back to 3rd Generation</a>
+                <a href="snes.html" class="btn btn-outline">SNES →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Video Game Humanities</h4>
+                    <p>Preserving and celebrating the history of interactive entertainment.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../learn.html">Learn</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://gamehistory.org" target="_blank">Video Game History Foundation</a></li>
+                        <li><a href="https://www.museumofplay.org" target="_blank">The Strong Museum</a></li>
+                        <li><a href="https://archive.org" target="_blank">Internet Archive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Video Game Humanities. An educational preservation project.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+        <div class="lightbox-content"></div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
